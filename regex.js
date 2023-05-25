@@ -20,8 +20,7 @@ status: Approved
 
 Regular Expression 1: Phone Number 
 - Format to match: ###-###-#### 
-- Planned usage: Will be used to parse out all phone numbers in that format in any given string. The phone numbers should be saved in an array. Make sure it captures ALL phone 
-numbers if there are more than one
+- Planned usage: Will be used to parse out all phone numbers in that format in any given string. The phone numbers should be saved in an array. Make sure it captures ALL phone numbers if there are more than one
 
 - Hint for regex: Is there a shortcut for digits? What quantifier allows you to specify the exact amount of times to match a character? What modifier finds all matches instead of just the first?
 - Hint for testing: What JavaScript method saves matches into an array? 
@@ -31,8 +30,7 @@ Expected Output:
 
 */ 
  
-let phoneReg = /write your regex here/
-
+let phoneReg = sampleApp.match(\d{3}-\d{3}-\d{4})
 /* 
 
 Regular Expression 2: Email 
@@ -51,8 +49,7 @@ Expected Output:
 
 */ 
 
-let emailReg = /write your regex here/
-
+let emailReg = sampleApp.match(/\w+@[a-zA-Z]+.[a-zA-Z]/)
 /* 
 
 Regular Expression 3: 
@@ -65,6 +62,6 @@ Regular Expression 3:
 Expected Output: 
 365
 
-*/ 
+*/
 
-let statusReg = /write your regex here/
+let statusReg = sampleApp.search(/Status/ig)
